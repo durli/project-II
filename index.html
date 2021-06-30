@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Project 2</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Krub:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <div id="left">Digital Product Landing</div>
+      <nav id="right">
+        <ul>
+          <li><a href="#">Documentation</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Landing</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#" class="current">Home</a></li>
+          <li>
+            <a href="#"><img src="images/cart.png" alt="cart" id="cart" /></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div id="bgimg"></div>
+      <div class="description">
+        <h1 class="heading">Product That Empowers Over 500,000 Users</h1>
+        <p class="detail">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione,
+          nulla quod? Ab aut, et ipsum, quaerat molestiae reiciendis velit quas
+          ea amet libero maxime dicta. Eius nostrum fuga reprehenderit
+          exercitationem esse dolore maiores fugit similique. Lorem ipsum dolor
+          sit, amet consectetur adipisicing elit. Optio pariatur eaque
+          distinctio dolore voluptatem molestias, similique unde? Eius
+          repellendus veritatis amet iusto ea quo voluptatum, debitis
+          voluptatibus, facere nihil quos sed provident quasi non veniam. Vitae
+          facilis consequatur autem nemo enim non quisquam ipsam numquam
+        </p>
+        <button class="btn">Buy Divi Pro For Just $89</button>
+      </div>
+    </main>
+    <script>
+      // document.querySelector('.heading').innerHTML = 'Hi everyone';
+
+      function adjustHeight() {
+        var height1 = document.querySelector("body").offsetHeight;
+        height1 = height1 * 1.1;
+        height1 = height1 + "px";
+        document.querySelector("#bgimg").style.height = height1;
+        var height2 = document.querySelector("#bgimg").style.height;
+      }
+      setInterval(adjustHeight, 100);
+    </script>
+  </body>
+</html>
